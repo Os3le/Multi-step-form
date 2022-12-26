@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Multi-step form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <picture >
+                <source media="(min-width:1240px)" srcset="assets\images\bg-sidebar-desktop.svg" >
+                <img src="assets\images\bg-sidebar-mobile.svg" class="nav-background">
+              </picture>
+            <!-- <img src="assets\images\bg-sidebar-mobile.svg" alt="" class="nav-background"> -->
+            <div class="options">
+                <div class="option">
+                    <div class="illuminate">1</div>
+                    <div class="option-right">
+                        <span class="step">STEP 1</span>
+                        <h4 class="step-title">your info</h4>
+                    </div>
+                    
+                </div>
+                <div class="option">
+                    <div class="illuminate">2</div>
+                    <div class="option-right">
+                        <span class="step">STEP 2</span>
+                        <h4 class="step-title">select plan</h4>
+                    </div>
+                    
+                </div>
+                <div class="option">
+                    <div class="illuminate">3</div>
+                    <div class="option-right">
+                        <span class="step">STEP 3</span>
+                        <h4 class="step-title">add-ons</h4>
+                    </div>
+                   
+                </div>
+                <div class="option">
+                    <div class="illuminate">4</div>
+                    <div class="option-right">
+                        <span class="step">STEP 4</span>
+                        <h4 class="step-title">summary</h4>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+    <div class="flex-desktop">
+        <main id="main" class="main">
+            <!-- /* ========================================================================================================== */ -->
+
+
+            <div class="main-container fixed-width" id="one">
+                <div class="description">
+                    <h4 class="select-your-plan">Personal info</h4>
+                    <p class="text">Please provide your name, email address, and phone number.</p>
+                </div>
+                <div class="input-list">
+                    <form class="input-list" action="" method="get" name="form" id="form1">
+                        <div class="input">
+                            <label for="name">name</label>
+                            <input type="text" name="name" id="name" placeholder="e.g. Stephen King" required="required" class="input-tags" value="">
+                        </div>
+                        <div class="input">
+                            <label for="email">email</label>
+                            <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com" required="required" class="input-tags" value="">
+                        </div>
+                        <div class="input">
+                            <label for="phone">phone number</label>
+                            <input type="tel" name="phone" id="phone" placeholder="e.g. +234....." required="required" class="input-tags" value="" maxlength="11">
+                        </div>
+                        <small class="small" id="small-form-1">fill in all the info before proceeding</small>
+                    </form>
+                </div>
+            </div>
+
+            <!-- /* ========================================================================================================== */ -->
+
+            <div class="main-container fixed-width" id="two">
+                <div class="description2">
+                    <h4 class="select-your-plan">Select your plan</h4>
+                    <p class="text">You have the option of monthly or yearly billing</p>
+                </div>
+
+                <div class="choices2">
+
+                    <label for="choice1">
+                        <input type="radio" name="choice" id="choice1"  class="radio" hidden>
+                    <div class="choice">
+                        <img src="assets\images\icon-arcade.svg" alt="arcade" class="icon">
+                        <div class="right">
+                            <h4 class="title">arcade</h4>
+                            <span class="price">$ <span class="price-duration">9</span>/mo</span>
+                            <span class="duration">2 months free</span>
+                        </div>
+                    </div>
+                </label>
+                    <label for="choice2">
+                        <input type="radio" name="choice" id="choice2"  class="radio" hidden>
+                    <div class="choice">
+                        <img src="assets\images\icon-advanced.svg" alt="advanced" class="icon">
+                        <div class="right">
+                            <h4 class="title">advanced</h4>
+                            <span class="price">$ <span class="price-duration">12</span>/mo</span>
+                            <span class="duration">2 months free</span>
+                        </div>
+                    </div>
+                </label>
+
+                    <label for="choice3">
+                        <input type="radio" name="choice" id="choice3" class="radio"  hidden>
+                    <div class="choice">
+                        <img src="assets\images\icon-pro.svg" alt="pro" class="icon">
+                        <div class="right">
+                            <h4 class="title">pro</h4>
+                            <span class="price">$ <span class="price-duration">15</span>/mo</span>
+                            <span class="duration">2 months free</span>
+                        </div>
+                    </div>
+                </label>
+                </div>
+                <small class="small" id="small-form-2">select one of the plans</small>
+                <div class="toggle-div">
+                    <input type="checkbox" id="toggle-switch" name="toggle" hidden>
+                    <span class="toggle-optoion monthly">monthly</span>
+                    <label class="toggle-label" for="toggle-switch" class="toggle"><div id="inner-circle"></div></label>
+                    <span class="toggle-optoion yearly">yearly</span>
+                </div>
+            </div>
+
+            <!-- /* ========================================================================================================== */ -->
+
+            <div class="main-container fixed-width" id="three">
+                <div class="description3">
+                    <!-- +$1/mo   +$2/mo   +$2/mo -->
+
+                    <h4 class="select-your-plan">Pick add-ons Add-ons</h4>
+                    <p class="text">help enhance your gaming experience.</p>
+                </div>
+
+                <div class="choices3">
+                    <label for="1">
+                    <div class="choice">
+                        <input type="checkbox" name="check" class="multi-choice" value="1" id="1">
+                        <div class="right">
+                            <h5 class="title">Online service </h5>
+                            <span class="price">Access to multiplayer games</span>
+                            <!-- <span class="duration">2 months free</span> -->
+                        </div>
+                        <div class="pricing-per-month">
+                            +$<span class="price">1</span><span class="duration">/mo</span>
+                        </div>
+                    </div>
+                </label>
+                    <label for="2">
+                    <div class="choice">
+                        <input type="checkbox" name="check" class="multi-choice" value="2" id="2">
+                        <div class="right">
+                            <h5 class="title">Larger storage</h5>
+                            <span class="price">Extra 1TB of cloud save</span>
+                            <!-- <span class="duration">2 months free</span> -->
+                        </div>
+                        <div class="pricing-per-month">
+                            +$<span class="price">2</span><span class="duration">/mo</span>
+                        </div>
+                    </div>
+                </label>
+                    <label for="3">
+                    <div class="choice">
+                        <input type="checkbox" name="check" class="multi-choice" value="3" id="3" >
+                        <div class="right">
+                            <h5 class="title">Customizable Profile</h5>
+                            <span class="price">Custom theme on your profile</span>
+                            <!-- <span class="duration">2 months free</span> -->
+                        </div>
+                        <div class="pricing-per-month">
+                            +$<span class="price">2</span><span class="duration">/mo</span>
+                        </div>
+                    </div>
+                </label>
+                </div>
+                <small class="small" id="small-form-3">select one of the options above</small>
+            </div>
+
+            <!-- /* ========================================================================================================== */ -->
+
+            <div class="main-container fixed-width" id="four">
+                <!-- <div class="description4">
+                    <h4 class="select-your-plan"> Finishing up</h4>
+                    <p class="text">Double-check everything looks OK before confirming.</p>
+                </div>
+                <div class="finishing-up">
+                    <div class="top">
+                        <div class="left">
+                            <h5 class="plan-name">Arcade(<span class="duration">Monthly</span>)</h5>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">Change</a>
+                        </div>
+                        <div class="top-right">
+                            $<span class="total">9</span>/mo
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="charges">
+                            <span class="charge">Online service</span>
+                            <span class="charge-cost float-left">+<span class="cost">1</span>/mo</span>
+                        </li>
+                        <li class="charges">
+                            <span class="charge">Larger storage</span>
+                            <span class="charge-cost float-left">+<span class="cost">2</span>/mo</span>
+                        </li>
+                    </ul>
+
+                    <div class="bottom"></div>
+                </div>
+                <div class="total-per-month">
+                    <span class="total">Total(per <span class="total-duration">month</span>)</span> <span class="cost-total float-left">+<span class="cost">1</span>/mo</span>
+                </div> -->
+            </div>
+
+            <!-- /* ========================================================================================================== */ -->
+
+            <div class="main-container fixed-width" id="five">
+                <div class="inner">
+                    <img src="assets\images\icon-thank-you.svg" alt="icon-thank-you" class="ty">
+                    <h3 class="thanks">Thank you!</h3>
+                    <div class="thank-you-text">
+                        <span>Thank you! Thanks for confirming your subscription!</span>
+                        <p class="thankyou-info">
+                            We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- /* ========================================================================================================== */ -->
+    </main>
+    
+    <div id="footer">
+        <span class="go-back" id="go-back">go back</span>
+        <input class="next" id="next" type="button" type="submit" value="next step">
+    </div>
+</div>
+</div>
+
+    <!-- <input type="checkbox" name="" id=""> -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
